@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Personal Portfolio Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/98a8318835.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div id="header">
+		<div class="container">
+			<nav>
+				<img src="Picture\logo.png" class="logo">
+				<ul>
+					<div class="button">
+						<li><a href="#header">Home </a></li>
+						<li><a href="#about">About </a></li>
+						<li><a href="#services">Services </a></li>
+						<li><a href="#portfolio">Work </a></li>
+						<li><a href="#contact">Contact </a></li>
+					</div>
+				</ul>
+			</nav>
+			<div class="header-text">
+				<p> Programmer </p>
+				<h1>Hi,I'm<span> Bishnu </span></h1>
+			</div>
+		</div>
+	</div>
+	<!---about section--->
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="Picture/photo.jpg">
+				</div>
+				<div class="about-col-2">
+					<h1 class="sub-title">About Me</h1>
+					<p class="name">Hello, I'm Bishnu Karki, a creative programmer from Salakpur, Nepal, with five years
+						of experience. Proficient in HTML, JavaScript, React.js, and Node.js, I've contributed to over
+						many projects, demonstrating my commitment to excellence. Check out my portfolio for a glimpse
+						of my diverse work. Ready to bring a fresh perspective to your next programming challenge.
+					</p>
+					<div class="tab-titles">
+						<p class="tab-links active-link " onclick="opentab('skills')"> Skills </p>
+						<p class="tab-links" onclick="opentab('experience')"> Experience </p>
+						<p class="tab-links" onclick="opentab('education')"> Education </p>
+					</div>
+					<div class="tab-contents active-tab" id="skills">
+						<ul>
+							<li>
+								<span>UI/UX</span><br>
+								Designing Web interfaces
+							</li>
+							<li>
+								<span>Web Development</span><br>
+								Designing dynamic web interfaces
+							</li>
+							<li>
+								<span>App Development</span><br>
+								Building apps for PC and android/IOS
+							</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="experience">
+						<ul>
+							<li>
+								<span>2012 - 2014</span><br>
+								Worked as team leader at TIBCO
+							</li>
+							<li>
+								<span>2014 - 2018</span><br>
+								Worked as web developer in LinkedIn
+							</li>
+							<li>
+								<span>2018 - Current</span><br>
+								Working in Perficient as a Programmer
+							</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="education">
+						<ul>
+							<li>
+								<span>2006</span><br>
+								Bachelor in BCA from Kathford College,TU
+							</li>
+							<li>
+								<span>2010</span><br>
+								Bachelor in Computer Science from University of Alabama
+							</li>
+							<li>
+								<span>2012</span><br>
+								Training in different programming language
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--serivces---->
+	<div id="services">
+		<div class="container">
+			<h1 class="sub-title">My Services</h1>
+			<div class="services-list">
+				<div>
+					<i class="fas fa-code"></i>
+					<h2>Web Design</h2>
+					<p>Web design is the process of building and maintaining websites or web applications.</p>
+				</div>
+				<div>
+					<i class="fa-solid fa-database"></i>
+					<h2>Backend Development
+					</h2>
+					<p>Backend development involves writing code and
+						building the server-side infrastructure that
+						powers and supports the functionality of software applications. .</p>
+				</div>
+				<div>
+					<i class="fas fa-crop-alt"></i>
+					<h2>UI/UX Design</h2>
+					<p>UI/UX design combines creating visually appealing interfaces (UI) and enhancing user satisfaction
+						through improved usability and interaction (UX).</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!----------portfolio----------->
+	<div id="portfolio">
+		<div class="container">
+			<h1 class="sub-title">My work</h1>
+			<div class="work-list">
+				<div class="work">
+					<img src="Picture/main timer.png" style="width: 150%; height: 100%;
+					 position: relative;
+					right: 79px;">
+					<div class="layer">
+						<h3>Timer</h3>
+						<p>Timer is a feature displaying elapsed
+							or remaining time for activities like countdowns.</p>
+						<a href="/Side project 1/index.html" target="_blank"><i
+								class="fas fa-external-link-alt"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img style="width: 150%; height: 100%; position: relative;
+					right: 79px;" src="Picture/pass.jfif">
+					<div class="layer">
+						<h3>Password Generator</h3>
+						<p>A password generator creates strong and secure passwords for enhanced online account
+							protection.</p>
+						<a href="/Side project 2/index.html" target="_blank"><i
+								class="fa-solid fa-arrow-up-right-from-square"></i></a>
+						</a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="Picture/form.png">
+					<div class="layer">
+						<h3>Form Validation</h3>
+						<p>Form validation ensures accurate and complete data entry by checking that submitted
+							information meets specified criteria.
+						</p>
+						<a href="/Side project 3/index.html" target="_blank"><i
+								class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-left">
+					<h1 class="sub-title">Contact me</h1>
+					<p><i class="fa-solid fa-envelope"></i> bishnu123@gmail.com</p>
+					<p><i class="fas fa-phone-square-alt"></i> 9807308431</p>
+					<div class="social-icons">
+						<a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+						<a href=""><i class="fab fa-twitter-square"></i></a>
+						<a href=""><i class="fab fa-instagram"></i></a>
+						<a href=""><i class="fab fa-linkedin"></i></a>
+					</div>
+					<a href="Picture/Project CV.pdf" download="Project CV.pdf" class="btn btn2">Download CV</a>
+
+
+				</div>
+				<div class="contact-right">
+					<form>
+						<input type="text" name="Name" placeholder="Your Name" required>
+						<input type="email" name="email" placeholder="Your Email" required>
+						<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+						<button type="submit" class="btn btn2">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script>
+		var tablinks = document.getElementsByClassName("tab-links");
+		var tabcontents = document.getElementsByClassName("tab-contents");
+		function opentab(tabname) {
+			for (tablink of tablinks) {
+				tablink.classList.remove("active-link");
+			}
+			for (tabcontent of tabcontents) {
+				tabcontent.classList.remove("active-tab");
+			}
+			event.currentTarget.classList.add("active-link");
+			document.getElementById(tabname).classList.add("active-tab");
+		}
+
+	</script>
+
+
+</body>
+
+</html>
